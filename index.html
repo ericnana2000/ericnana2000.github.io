@@ -2,109 +2,162 @@
 
 <html lang="en">
 
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Blank site</title>
-    <style>
-      h1{
-        font-family: Arial;color: blueviolet;
-        font-size: 48px;}
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SCB-Cameroon</title>
+  <style>
+    body {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      background-color: lightgreen;
+
+    }
+
+    h1 {
+      font-family: Arial;
+      color: black;
+      font-size: 32px;
+      text-align: center;
+    }
+
+    footer {
+      grid-column-start: 1;
+      grid-column-end: 3;
      
-      h2{
-        font-family: calibri;color: red;
-        font-size:32px;
-        }
-        h3{
-          font-family:Arial;color: greenyellow;
-          font-size:24px;
-          font-style:italic; 
-          }
+
+    }
+
+    header {
+      grid-column-start: 1;
+      grid-column-end: 3;
+    
+
+    }
+
+    aside {
+      grid-column-start: 1;
+      grid-column-end: 2;
+      grid-row-start: 2;
+      grid-row-end: 3;
+      
+    }
+
+    main {
+      grid-column-start: 2;
+      grid-column-end: 3;
+      grid-row-start: 2;
+      grid-row-end: 3;
+      
+    }
+
+    h2 {
+      font-family: calibri;
+      font-size: 32px;
+    }
+
+    h3 {
+      font-family: Arial;
+      font-size: 24px;
+      font-style: italic;
+    }
 
     p {
-      font-family:Georgia;
-      font-size:21px;
-      line-height: 1.4;}
+      font-family: Georgia;
+      font-size: 21px;
+      line-height: 1.4;
+    }
 
-      .intro{
-        font-family:Georgia;
-        font-size:21px;
-        font-weight:bold;
-        color: yellow;
-        background-color: lightyellow;
-        border-color: orange;
-        border-width: 5px;
-        border-style: dashed; 
-        padding-left: 20px;
-        padding-right: 20px;
-        }
+    .intro {
+      font-family: Georgia;
+      font-size: 21px;
+      font-weight: bold;
+      color: black;
+      border-color: black;
+      border-width: 5px;
+      border-style: dashed;
+      padding-left: 20px;
+      padding-right: 20px;
 
-        a{
-          color: red;
-          text-decoration: none;
+    }
 
-        }
+    a {
+    
+      text-decoration: none;
 
-        a:hover{
-          background-color: red;
+    }
 
-        }
+    a:hover {
+      background-color: yellow;
 
-    </style>
-  </head>
+    }
+  </style>
+</head>
 
-  <body>
-    <header>
-      <h1> Eric Nana</h1>
-      
-    </header>
+<body>
+
+  <header>
+    <h1> Society for Conservation Biology
+      <p>Cameroon Chapter</p>
+      <img src="img/buffalos-2019.jpg" />
+    </h1>
     <nav>
       <ul>
-        <li><a href="about/">About</a></li>
-        <li><a href="blog/">Blog</a></li>
-        <li><a href="contact/">Contact</a></li>
-        <li><a href="now/">Now</a></li>
-        <li><a href="projects/">Projects</a></li>
-        <li><a href="publications/">Publications</a></li>
-        <li><a href="research/">Research</a></li>
-        <li><a href="talks/">Talks</a></li>
-        <li><a href="teaching/">Teaching</a></li>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="about/index.html">About</a></li>
+        <li><a href="contact/index.html">Contact</a></li>
+        <li><a href="people/index.html">People</a></li>
+        <li><a href="projects/index.html">Projects</a></li>
+        <li><a href="news/index.html">Up coming events</a></li>
       </ul>
 
     </nav>
+  </header>
+  <main>
+    <h2>About SCB Cameroon Chapter</h2>
 
-    <main>
-        <h2>About SCB Cameroon Chapter</h2>
+    <div>
+      <p class="intro"> The Society for Conservation Biology-SCB- is one of the biggest conservation organisations in
+        the world.
+        It is made of people who work to conserve the world's ecosystems and endangered species through cutting-edge
+        science.
+        They also work to support livelihood activities for local communities around Protected Areas.</p>
+      <p>SCB has representations in all continents called sections, and each section is divided into chapters at country
+        level.</p>
+      <p> The Cameroon Chapter was created in 2016 and currently has more than 100 members. It is based in Yaounde and
+        currently
+        has several projects in different parts of the country. It is a partner of several local and international
+        organisations
+        and is at the forefront of capacity building of young scholars in Cameroon interested in the science of
+        conservation.
 
-        <div>
-        <p class="intro"> The Society for Conservation Biology-SCB- is one of the biggest conservation organisations in the world. 
-          It is made of people who work to conserve the world's ecosystems and endangered species through cutting-edge science.
-          They also work to support livelihood activities for local communities around Protected Areas.</p>
-        <p>SCB has representations in all continents called sections, and each section is divided into chapters at country level.</p>
-        <p> The Cameroon Chapter was created in 2016 and currently has more than 100 members. It is based in Yaounde and currently
-          currently has several projects in different parts of the country. It is a partner of several local and international organisations
-        </p>
-      </div>
-        
+    </div>
+    <img src="img/capacity-building-2019.jpg" />
 
-    </main>
-    <aside>
-     <ul>
-        <li><a href="https://github.com/scottgruber/academic-jumpstart">Get the starter kit code</a></li>
-       
-      </ul>  
-    </aside>
-    <footer>
-      <h3>Style guide</h3>
-      <ul>
-          <li><a href="color/index.html">Color swatches and tokens</a></li>
-          <li><a href="typography/index.html">Topography</a></li>
-          <li><a href="iconography/index.html">Iconography</a></li>
-          <li><a href="html/index.html">HTML</a></li>
-          
-      </ul>
- 
-    </footer>
-  </body>
+
+  </main>
+  <aside>
+    <h3>Funding opportunities</h3>
+    <ul>
+      <li><a href="color/index.html">Color swatches and tokens</a></li>
+      <li><a href="typography/index.html">Topography</a></li>
+      <li><a href="iconography/index.html">Iconography</a></li>
+      <li><a href="html/index.html">HTML</a></li>
+
+    </ul>
+  </aside>
+  <footer>
+    <ul>
+      <li><a href="https://github.com/scottgruber/academic-jumpstart">Learn more on the people behind this
+          organisation</a></li>
+
+    </ul>
+  </footer>
+
+
+
+
+
+</body>
 
 </html>
